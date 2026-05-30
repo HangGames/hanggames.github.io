@@ -850,7 +850,7 @@ class AdsManager {
         <div class="ad-label">Sponsored</div>
         <div style="color:#fff;padding:10px;">
           <p style="margin:5px 0;">Play more games at FreePlayHub</p>
-          <a href="https://rowhub.github.io" style="color:#3498db;text-decoration:none;">Browse All Games</a>
+          <a href="https://hanggames.github.io" style="color:#3498db;text-decoration:none;">Browse All Games</a>
         </div>
       </div>
     `;
@@ -871,7 +871,7 @@ class AdsManager {
           <div class="ad-label">Sponsored</div>
           <div style="color:#fff;padding:10px;">
             <p style="margin:5px 0;">Play more games at FreePlayHub</p>
-            <a href="https://rowhub.github.io" style="color:#3498db;text-decoration:none;">Browse All Games</a>
+            <a href="https://hanggames.github.io" style="color:#3498db;text-decoration:none;">Browse All Games</a>
           </div>
         </div>
       `;
@@ -893,7 +893,7 @@ class AdsManager {
             <div class="ad-label">Sponsored</div>
             <div style="color:#fff;padding:10px;">
               <p style="margin:5px 0;">Play more games at FreePlayHub</p>
-              <a href="https://rowhub.github.io" style="color:#3498db;text-decoration:none;">Browse All Games</a>
+              <a href="https://hanggames.github.io" style="color:#3498db;text-decoration:none;">Browse All Games</a>
             </div>
           </div>
         `;
