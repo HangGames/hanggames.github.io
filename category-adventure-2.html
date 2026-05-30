@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Games - Page 2 | Play Free Online | Fresh Arcade</title>
+  <meta name="description" content="Play the best free Adventure games online on Fresh Arcade. Page 2 of our curated collection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-card: rgba(22, 28, 45, 0.7);
+      --accent: #6c5ce7;
+      --accent-glow: rgba(108, 92, 231, 0.4);
+      --text-white: #ffffff;
+      --text-gray: #a0aec0;
+      --neon-green: #00f2fe;
+      --neon-pink: #ff007f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(circle at top, #1a1b36 0%, var(--bg-dark) 70%);
+      color: var(--text-white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Top Navbar Styles */
+    .top-navbar {
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 70px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .top-nav-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-nav-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ffffff 30%, var(--text-gray) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .top-nav-logo span {
+      -webkit-text-fill-color: initial;
+    }
+
+    .top-nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-nav-item {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav-item:hover, .top-nav-item.active {
+      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Dropdown Styles */
+    .top-nav-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .top-nav-dropdown-btn {
+      background: none;
+      border: none;
+      color: var(--text-gray);
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .top-nav-dropdown-btn:hover, .top-nav-dropdown.active .top-nav-dropdown-btn {
+      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .top-nav-dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: #111519;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      min-width: 180px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      z-index: 1010;
+      padding: 8px 0;
+      margin-top: 5px;
+    }
+
+    .top-nav-dropdown-content a {
+      color: var(--text-gray);
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+
+    .top-nav-dropdown-content a:hover, .top-nav-dropdown-content a.active {
+      color: var(--text-white);
+      background: var(--accent);
+    }
+
+    .top-nav-dropdown:hover .top-nav-dropdown-content {
+      display: block;
+    }
+
+    /* Toggle button for Mobile */
+    .top-nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 18px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1020;
+    }
+
+    .top-nav-toggle .toggle-bar {
+      width: 100%;
+      height: 2px;
+      background-color: var(--text-white);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--neon-green), var(--neon-pink));
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #ffffff 30%, var(--text-gray) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Categories Navigation inside Footer */
+    .categories-nav {
+      padding: 15px 0;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .categories-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .category-link {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .category-link:hover, .category-link.active {
+      color: var(--text-white);
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 20px 80px;
+      flex-grow: 1;
+      width: 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 16px;
+      box-shadow: 0 0 40px var(--accent-glow);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .thumbnail-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      overflow: hidden;
+      background: #000;
+    }
+
+    .thumbnail-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .card:hover .thumbnail-wrapper img {
+      transform: scale(1.08);
+    }
+
+    .card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-white);
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    .play-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: var(--accent);
+      color: var(--text-white);
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(108, 92, 231, 0.2);
+    }
+
+    .play-btn:hover {
+      background: #7d6ef9;
+      box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+    }
+
+    .play-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Pagination */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .page-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 40px;
+      padding: 0 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .page-link:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-white);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .page-link.active {
+      background: var(--accent);
+      color: var(--text-white);
+      border-color: var(--accent);
+      box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+    }
+
+    .page-link.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .page-arrow {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-gray);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .top-nav-toggle {
+        display: flex;
+      }
+
+      .top-nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        height: calc(100vh - 70px);
+        background: #0b0f19;
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 20px;
+        gap: 10px;
+        transition: right 0.3s ease;
+        z-index: 999;
+      }
+
+      .top-nav-menu.open {
+        right: 0;
+      }
+
+      .top-nav-item, .top-nav-dropdown-btn {
+        width: 100%;
+        text-align: left;
+        padding: 12px 15px;
+      }
+
+      .top-nav-dropdown-content {
+        position: static;
+        display: block;
+        background: rgba(255, 255, 255, 0.02);
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        margin-top: 0;
+        padding-left: 15px;
+      }
+
+      .top-nav-toggle.active .toggle-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .top-nav-toggle.active .toggle-bar:nth-child(2) {
+        opacity: 0;
+      }
+      .top-nav-toggle.active .toggle-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="top-navbar">
+    <div class="top-nav-container">
+      <a href="index.html" class="top-nav-logo">
+        <span>🎮</span> Fresh Arcade
+      </a>
+      <button class="top-nav-toggle" id="topNavToggle" aria-label="Toggle menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+      <div class="top-nav-menu" id="topNavMenu">
+        <a href="index.html" class="top-nav-item ">Home</a>
+        <a href="category-casual.html" class="top-nav-item ">Casual</a>
+        <a href="category-puzzle.html" class="top-nav-item ">Puzzle</a>
+        <a href="category-adventure.html" class="top-nav-item active">Adventure</a>
+        <a href="category-simulation.html" class="top-nav-item ">Simulation</a>
+        <a href="category-shooter.html" class="top-nav-item ">Shooter</a>
+        <a href="category-agility.html" class="top-nav-item ">Agility</a>
+        <div class="top-nav-dropdown ">
+          <button class="top-nav-dropdown-btn">More ▾</button>
+          <div class="top-nav-dropdown-content">
+            <a href="category-dress-up.html" class="">Dress-up</a>
+            <a href="category-strategy.html" class="">Strategy</a>
+            <a href="category-battle.html" class="">Battle</a>
+            <a href="category-racing-driving.html" class="">Racing & Driving</a>
+            <a href="category-match-3.html" class="">Match-3</a>
+            <a href="category-cards.html" class="">Cards</a>
+            <a href="category-merge.html" class="">Merge</a>
+            <a href="category-mahjong-connect.html" class="">Mahjong & Connect</a>
+            <a href="category-bubble-shooter.html" class="">Bubble Shooter</a>
+            <a href="category-sports.html" class="">Sports</a>
+            <a href="category-boardgames.html" class="">Boardgames</a>
+            <a href="category-educational.html" class="">Educational</a>
+            <a href="category-quiz.html" class="">Quiz</a>
+            <a href="category-io.html" class="">.IO</a>
+            <a href="category-care.html" class="">Care</a>
+            <a href="category-art.html" class="">Art</a>
+            <a href="category-football.html" class="">Football</a>
+            <a href="category-jigsaw.html" class="">Jigsaw</a>
+            <a href="category-cooking.html" class="">Cooking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Adventure Games</h1>
+    <p class="subtitle">Play the best free Adventure games online on Fresh Arcade. Page 2 of our curated collection.</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+            <!-- Card: Obby Survive Parkour -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/455.webp" alt="Obby Survive Parkour Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Obby Survive Parkour</h2>
+          <p class="card-description">Obby Survivor Parkour is a fast-paced 3D parkour and escape game designed for players who trust their reflexes. You will test both your speed and balance skills while trying to survive in the obstacle filled course!
+
+Each section is full of new traps and platforms that will challenge you even more. Try to survive tsunami waves, obstacle courses, lava attacks, snowball storms and red light green light game and reach the finish line.  Can you be one of the few who can reach the end of the course?</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Agility</span>
+          </div>
+          <a href="obby-survive-parkour.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Quackventure -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/460.webp" alt="Quackventure Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Quackventure</h2>
+          <p class="card-description">Join Quack, the brave duck, on an exhilarating journey through a magical forest brimming with wonder and hidden secrets. Explore enchanting landscapes, solve intriguing mysteries, and embark on an adventure filled with thrilling surprises and endless excitement at every corner!</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+          </div>
+          <a href="quackventure.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Jetpack Jump -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/474.webp" alt="Jetpack Jump Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Jetpack Jump</h2>
+          <p class="card-description">Jetpack Jump is a fun and simple casual jumping game that lets you perform Olympic-style jumps with a little help from a jet pack strapped onto your back. Your aim is to jump as many meters as possible, constantly beating your best score. Your athlete will be rewarded generously in coins, which will help you upgrade and fly to even greater heights.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+          </div>
+          <a href="jetpack-jump.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Escape Room Mystery Key -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/486.webp" alt="Escape Room Mystery Key Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Escape Room Mystery Key</h2>
+          <p class="card-description">Escape Room Mystery Key is an intense escape room adventure filled with horror and puzzle elements. Choose a role to enter an abandoned school or a hospital. Uncover hidden clues and keys to find your way out. In this game, you must carefully examine every detail in the room, searching for hidden clues.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Puzzle</span>
+          </div>
+          <a href="escape-room-mystery-key.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Golden Frontier -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/494.webp" alt="Golden Frontier Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Golden Frontier</h2>
+          <p class="card-description">This simulation game takes you on a Wild West adventure. Mine and manage resources, grow crops and craft goods as you aim to build a thriving city in the frontier lands. Invite friends to become your neighbors to trade and co-op, and progress quicker. Hunt for gold, unlock new locations, and discover secrets as the story unfolds. Meet a colorful cast of characters, including trappers, Indians and criminals.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Simulation</span>
+          </div>
+          <a href="golden-frontier.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: CraftsMan 3D Gangster -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/504.webp" alt="CraftsMan 3D Gangster Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">CraftsMan 3D Gangster</h2>
+          <p class="card-description">In the new action game CraftsMan 3D Gangster, which is exciting and similar to Minecraft, you may become a real-life gangster roaming the streets of the city. As you explore the open world, you'll encounter other criminals who are eager to wipe you off the map.
+
+Get through every level of this fun 3D action game, where you'll face more frightening adversaries.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Shooter</span>
+          </div>
+          <a href="craftsman-3d-gangster.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Pin Master -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/517.webp" alt="Pin Master Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Pin Master</h2>
+          <p class="card-description">Pin master: Screw puzzle quest & brain games challenges your problem-solving skills in a captivating pin puzzle adventure. Strategically tap to unlock screw holes on products, guiding metal plates to fall in the correct sequence. Navigate through intricate mazes of nuts, bolts, and plates. With each level presenting new challenges, immerse yourself in over 100 brain-teasing stages. Need a hint? No problem! Utilize the hint feature or remove random screws to progress.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Puzzle</span>
+          </div>
+          <a href="pin-master.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Stickman in space -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/524.webp" alt="Stickman in space Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Stickman in space</h2>
+          <p class="card-description">You have to play as a Stickman astronaut who is stuck on the moon.
+Use all possible ways to leave the moon and get to our planet Earth.
+On the way you will encounter various dangers, such as aliens, flying meteorites and much more.
+You will have several objects in your hands with which you can try to escape from the natural satellite of the moon. Several objects will lead you to death, and some objects can save your life, be careful and cautious.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+          </div>
+          <a href="stickman-in-space.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Deep in the Lab - Chapter 1 -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/536.webp" alt="Deep in the Lab - Chapter 1 Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Deep in the Lab - Chapter 1</h2>
+          <p class="card-description">Deep in the Lab is 2D '90 style survival horror game, with old style pre-rendered backgrounds, puzzles to solve, keys to collect, monster to avoid or defeat (your choice), poor resources, jumpscares, limited saves, FMV and a five floors lab to explore.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Shooter</span>
+          </div>
+          <a href="deep-in-the-lab-chapter-1.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Tower Defense -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/537.webp" alt="Tower Defense Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Tower Defense</h2>
+          <p class="card-description">In Tower Defense, you will direct a powerful army of defense towers to face enemy attacks. Arrange your defense towers carefully and develop the strategy to repel the enemy. Each tower has different attack powers and abilities. Unlock the right type and placement. Update your soldiers to help you battle. Use your crossbow to take them out.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Battle</span>
+          </div>
+          <a href="tower-defense.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Ghostly Graveyard Halloween Special -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/544.webp" alt="Ghostly Graveyard Halloween Special Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Ghostly Graveyard Halloween Special</h2>
+          <p class="card-description">This Halloween, experience the thrill of Ghostly Graveyard is a spooky platformer adventure where you explore a haunted graveyard and unravel its mysteries. Navigate challenging levels, collect coins, and avoid ghostly encounters. Can you solve the graveyard's secrets?
+A Halloween Special Spooky Puzzle Adventure.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Puzzle</span>
+          </div>
+          <a href="ghostly-graveyard-halloween-special.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Penguin Adventure -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/547.webp" alt="Penguin Adventure Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Penguin Adventure</h2>
+          <p class="card-description">Join the penguin’s adventure in Penguin Adventure! You will play as a penguin who must reach the castle in each level. You will explore three worlds, each with its own challenges and surprises. You will also have to control the penguin’s actions. You will collect stars and hearts along the way, which will affect your score and rewards. You will need enough yellow stars to unlock the next world. Penguin Adventure is a game that will test your reaction and strategy. Don’t miss this fun game!</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Agility</span>
+          </div>
+          <a href="penguin-adventure.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Snow Rider Obby Parkour -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/576.webp" alt="Snow Rider Obby Parkour Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Snow Rider Obby Parkour</h2>
+          <p class="card-description">Snow Rider Obby Parkour is a fast-paced snowboard adventure where reflexes, timing, and control matter. Play solo or with a friend in split-screen mode and experience different snow challenges across multiple game modes. Whether you want to beat distance records, explore a massive open world, or race down dangerous mountains, this game offers a complete snowboarding experience.
+
+Master your snowboard, perform double jumps, and unlock amazing gear to customize your character!</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Racing & Driving</span>
+          </div>
+          <a href="snow-rider-obby-parkour.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: DTA: Best Thief -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/581.webp" alt="DTA: Best Thief Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">DTA: Best Thief</h2>
+          <p class="card-description">Can you steal everything without getting caught? Test your agility and cunning!
+In "GTA: Top Thief" you will find:
+
+- Lots of shops and difficulties with different goods
+- Smart administrators – be careful!
+- Improve your skills - become stealthier and faster
+- Steal from sprunky, roblox and granny
+- Go through the story with exciting quests
+- Collect pets and stand out among thieves
+
+Each successful heist brings you closer to the title of the best thief in "GTA: Top Thief"!</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+<span class="tag">Simulation</span>
+          </div>
+          <a href="dta-best-thief.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Monster Dash -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/588.webp" alt="Monster Dash Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Monster Dash</h2>
+          <p class="card-description">Sprint, Jump and Blast your way through Monster Dash, an action-packed game by the creators of Jetpack Joyride and Fruit Ninja.
+
+Join Barry Steakfries and his iconic Machine Gun Jetpack in a world full of menacing monster mayhem, as you run and gun your way through hordes of zombies, vampires and more with the most explosive and powerful weapons you can find!</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+          </div>
+          <a href="monster-dash.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Horror Escape Granny Room -->
+      <article class="card">
+        <div class="thumbnail-wrapper">
+          <img src="images/592.webp" alt="Horror Escape Granny Room Cover" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Horror Escape Granny Room</h2>
+          <p class="card-description">In case you are ready for a creepy adventure full of horror and exploration, then choose Horror Escape: Granny Room without hesitation! In our game, you are going to go on a dangerous journey.
+Collect clues and keys while trying to escape the clutches of horrible granny. Your path is full of dangers. You must dodge the monsters lurking in the dark corners.  To unlock these areas, you must collect keys and reveal secrets. What awaits you? Only time will tell.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+          </div>
+          <a href="horror-escape-granny-room.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+    </div>
+    <div class="pagination"><a href="category-adventure.html" class="page-link page-arrow">&laquo; Prev</a><a href="category-adventure.html" class="page-link">1</a><span class="page-link active">2</span><span class="page-link disabled">Next &raquo;</span></div>
+  </div>
+
+  <footer>
+      <nav class="categories-nav">
+    <div class="categories-container">
+      <a href="index.html" class="category-link ">All Games</a>
+      <a href="category-io.html" class="category-link ">.IO</a>
+      <a href="category-adventure.html" class="category-link active">Adventure</a>
+      <a href="category-agility.html" class="category-link ">Agility</a>
+      <a href="category-art.html" class="category-link ">Art</a>
+      <a href="category-battle.html" class="category-link ">Battle</a>
+      <a href="category-boardgames.html" class="category-link ">Boardgames</a>
+      <a href="category-bubble-shooter.html" class="category-link ">Bubble Shooter</a>
+      <a href="category-cards.html" class="category-link ">Cards</a>
+      <a href="category-care.html" class="category-link ">Care</a>
+      <a href="category-casual.html" class="category-link ">Casual</a>
+      <a href="category-cooking.html" class="category-link ">Cooking</a>
+      <a href="category-dress-up.html" class="category-link ">Dress-up</a>
+      <a href="category-educational.html" class="category-link ">Educational</a>
+      <a href="category-football.html" class="category-link ">Football</a>
+      <a href="category-jigsaw.html" class="category-link ">Jigsaw</a>
+      <a href="category-mahjong-connect.html" class="category-link ">Mahjong & Connect</a>
+      <a href="category-match-3.html" class="category-link ">Match-3</a>
+      <a href="category-merge.html" class="category-link ">Merge</a>
+      <a href="category-puzzle.html" class="category-link ">Puzzle</a>
+      <a href="category-quiz.html" class="category-link ">Quiz</a>
+      <a href="category-racing-driving.html" class="category-link ">Racing & Driving</a>
+      <a href="category-shooter.html" class="category-link ">Shooter</a>
+      <a href="category-simulation.html" class="category-link ">Simulation</a>
+      <a href="category-sports.html" class="category-link ">Sports</a>
+      <a href="category-strategy.html" class="category-link ">Strategy</a>
+    </div>
+  </nav>
+    <p style="margin-top: 15px;">&copy; 2026 Adventure Games. Deployed on hanggames.github.io.</p>
+  </footer>
+
+  <script src="ads-manager.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const topNavToggle = document.getElementById('topNavToggle');
+      const topNavMenu = document.getElementById('topNavMenu');
+      if (topNavToggle && topNavMenu) {
+        topNavToggle.addEventListener('click', () => {
+          topNavMenu.classList.toggle('open');
+          topNavToggle.classList.toggle('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

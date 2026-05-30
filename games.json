@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "hidden-objects",
+    "thumbnail": "https://hanggames.github.io/images/300.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "max-speed",
+    "thumbnail": "https://hanggames.github.io/images/301.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "meteoheroes",
+    "thumbnail": "https://hanggames.github.io/images/302.webp",
+    "genre": "Adventure, Educational"
+  },
+  {
+    "id": "ball-craze-sort",
+    "thumbnail": "https://hanggames.github.io/images/303.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "solitaire-klondike-eternal-russian-classic",
+    "thumbnail": "https://hanggames.github.io/images/304.webp",
+    "genre": "Cards"
+  },
+  {
+    "id": "quiz-master",
+    "thumbnail": "https://hanggames.github.io/images/305.webp",
+    "genre": "Casual, Quiz"
+  },
+  {
+    "id": "papa-buzja",
+    "thumbnail": "https://hanggames.github.io/images/306.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "oreplication",
+    "thumbnail": "https://hanggames.github.io/images/307.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "color-block-jam-2",
+    "thumbnail": "https://hanggames.github.io/images/308.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "sandbox-destroy-the-ragdoll",
+    "thumbnail": "https://hanggames.github.io/images/309.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "moscow-metro-driver-3d",
+    "thumbnail": "https://hanggames.github.io/images/310.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "komaru-cat",
+    "thumbnail": "https://hanggames.github.io/images/311.webp",
+    "genre": "Care, Casual"
+  },
+  {
+    "id": "cyber-arrow",
+    "thumbnail": "https://hanggames.github.io/images/312.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "hexa-stack",
+    "thumbnail": "https://hanggames.github.io/images/313.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "romantic-k-pop-transformation",
+    "thumbnail": "https://hanggames.github.io/images/314.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "tangram-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/315.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "mahjong-3d-match",
+    "thumbnail": "https://hanggames.github.io/images/316.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "theo-morinis-magical-resort",
+    "thumbnail": "https://hanggames.github.io/images/317.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "car-mechanic-simulator-2025",
+    "thumbnail": "https://hanggames.github.io/images/318.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "ludo-star",
+    "thumbnail": "https://hanggames.github.io/images/319.webp",
+    "genre": "Boardgames, Casual"
+  },
+  {
+    "id": "mr-bounce",
+    "thumbnail": "https://hanggames.github.io/images/320.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "koko-loco-block-blast",
+    "thumbnail": "https://hanggames.github.io/images/321.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "cheerful-plumber",
+    "thumbnail": "https://hanggames.github.io/images/322.webp",
+    "genre": "Art"
+  },
+  {
+    "id": "treasure-hunt-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/323.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "home-block-story",
+    "thumbnail": "https://hanggames.github.io/images/324.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "gun-shooting-games-sniper-3d",
+    "thumbnail": "https://hanggames.github.io/images/325.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "survival-island-evo",
+    "thumbnail": "https://hanggames.github.io/images/326.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "reach-2048",
+    "thumbnail": "https://hanggames.github.io/images/327.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "twinkle-shooter",
+    "thumbnail": "https://hanggames.github.io/images/328.webp",
+    "genre": "Puzzle, Bubble Shooter"
+  },
+  {
+    "id": "water-junk-warriors",
+    "thumbnail": "https://hanggames.github.io/images/329.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "fish-rain-2",
+    "thumbnail": "https://hanggames.github.io/images/330.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "obby-escape-barrys-jail-parkour",
+    "thumbnail": "https://hanggames.github.io/images/331.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "murderers-vs-sheriffs-duels",
+    "thumbnail": "https://hanggames.github.io/images/332.webp",
+    "genre": "Shooter, Battle"
+  },
+  {
+    "id": "labubu-jetpack-rush",
+    "thumbnail": "https://hanggames.github.io/images/333.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "packing-line",
+    "thumbnail": "https://hanggames.github.io/images/334.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "pixel-blast",
+    "thumbnail": "https://hanggames.github.io/images/335.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "connect-em-all",
+    "thumbnail": "https://hanggames.github.io/images/336.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "merge-blocks-2048",
+    "thumbnail": "https://hanggames.github.io/images/337.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "guinea-piggy-matching",
+    "thumbnail": "https://hanggames.github.io/images/338.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "queens-royal-sudoku-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/339.webp",
+    "genre": "Puzzle, Strategy"
+  },
+  {
+    "id": "goods-sorting-shopping-master",
+    "thumbnail": "https://hanggames.github.io/images/340.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "wordling-daily-word-challenge",
+    "thumbnail": "https://hanggames.github.io/images/341.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "flower-block",
+    "thumbnail": "https://hanggames.github.io/images/342.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "fluffy-mania",
+    "thumbnail": "https://hanggames.github.io/images/343.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "squid-game-hunter",
+    "thumbnail": "https://hanggames.github.io/images/344.webp",
+    "genre": "Casual, Strategy"
+  },
+  {
+    "id": "phantom-thief-cat-running",
+    "thumbnail": "https://hanggames.github.io/images/345.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "arrow-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/346.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "12-in-1-solitaire",
+    "thumbnail": "https://hanggames.github.io/images/347.webp",
+    "genre": "Cards, Strategy"
+  },
+  {
+    "id": "math-master",
+    "thumbnail": "https://hanggames.github.io/images/348.webp",
+    "genre": "Puzzle, Quiz"
+  },
+  {
+    "id": "genfire",
+    "thumbnail": "https://hanggames.github.io/images/349.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "archers-ragdoll-physics",
+    "thumbnail": "https://hanggames.github.io/images/350.webp",
+    "genre": "Adventure, Shooter"
+  },
+  {
+    "id": "earth-defender",
+    "thumbnail": "https://hanggames.github.io/images/351.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "grow-a-garden-3d",
+    "thumbnail": "https://hanggames.github.io/images/352.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "darling-doll",
+    "thumbnail": "https://hanggames.github.io/images/353.webp",
+    "genre": "Casual, Dress-up"
+  },
+  {
+    "id": "travel-story-match",
+    "thumbnail": "https://hanggames.github.io/images/354.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "snakes",
+    "thumbnail": "https://hanggames.github.io/images/355.webp",
+    "genre": "Puzzle, Strategy"
+  },
+  {
+    "id": "pim-path",
+    "thumbnail": "https://hanggames.github.io/images/356.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "underwater-survival",
+    "thumbnail": "https://hanggames.github.io/images/357.webp",
+    "genre": "Adventure, Simulation"
+  },
+  {
+    "id": "pottery-master",
+    "thumbnail": "https://hanggames.github.io/images/358.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "magic-and-wizards-mahjong",
+    "thumbnail": "https://hanggames.github.io/images/359.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "park-me-draw-path",
+    "thumbnail": "https://hanggames.github.io/images/360.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "superpixelint",
+    "thumbnail": "https://hanggames.github.io/images/361.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "katana",
+    "thumbnail": "https://hanggames.github.io/images/362.webp",
+    "genre": "Adventure, Battle"
+  },
+  {
+    "id": "aod-art-of-defense",
+    "thumbnail": "https://hanggames.github.io/images/363.webp",
+    "genre": "Shooter, Strategy"
+  },
+  {
+    "id": "soccer-duel",
+    "thumbnail": "https://hanggames.github.io/images/364.webp",
+    "genre": "Football, Casual"
+  },
+  {
+    "id": "labuba-halloween-infestation",
+    "thumbnail": "https://hanggames.github.io/images/365.webp",
+    "genre": "Agility"
+  },
+  {
+    "id": "dalgona-game2",
+    "thumbnail": "https://hanggames.github.io/images/366.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "minicraft-chef-cake-wars",
+    "thumbnail": "https://hanggames.github.io/images/367.webp",
+    "genre": "Battle, Casual"
+  },
+  {
+    "id": "association-connect-word",
+    "thumbnail": "https://hanggames.github.io/images/368.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "grunge-chic-alt-fashion",
+    "thumbnail": "https://hanggames.github.io/images/369.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "speedrun-platformer",
+    "thumbnail": "https://hanggames.github.io/images/370.webp",
+    "genre": "Agility"
+  },
+  {
+    "id": "swordedio-spin-and-rub",
+    "thumbnail": "https://hanggames.github.io/images/371.webp",
+    "genre": ".IO, Battle"
+  },
+  {
+    "id": "pull-the-pins",
+    "thumbnail": "https://hanggames.github.io/images/372.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "horror-school-detective-story",
+    "thumbnail": "https://hanggames.github.io/images/373.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "space-shift",
+    "thumbnail": "https://hanggames.github.io/images/374.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "skillful-finger",
+    "thumbnail": "https://hanggames.github.io/images/375.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "doomsday-tower-defense",
+    "thumbnail": "https://hanggames.github.io/images/376.webp",
+    "genre": "Battle, Strategy"
+  },
+  {
+    "id": "block-builder-jam",
+    "thumbnail": "https://hanggames.github.io/images/377.webp",
+    "genre": "Puzzle, Strategy"
+  },
+  {
+    "id": "obby-prison-run",
+    "thumbnail": "https://hanggames.github.io/images/378.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "bloons-survivalio",
+    "thumbnail": "https://hanggames.github.io/images/379.webp",
+    "genre": ".IO"
+  },
+  {
+    "id": "squid-game-memory-card-match",
+    "thumbnail": "https://hanggames.github.io/images/380.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "sweet-dessert-hole",
+    "thumbnail": "https://hanggames.github.io/images/381.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "jigsaw-cards-daily-puzzles",
+    "thumbnail": "https://hanggames.github.io/images/382.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "rabbit-carrot",
+    "thumbnail": "https://hanggames.github.io/images/383.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "vikings-an-archers-journey",
+    "thumbnail": "https://hanggames.github.io/images/384.webp",
+    "genre": "Adventure, Shooter"
+  },
+  {
+    "id": "office-brawl-room-smash",
+    "thumbnail": "https://hanggames.github.io/images/385.webp",
+    "genre": "Battle, Casual"
+  },
+  {
+    "id": "cop-simulator",
+    "thumbnail": "https://hanggames.github.io/images/386.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "counter-craft-sniper",
+    "thumbnail": "https://hanggames.github.io/images/387.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "pool-8",
+    "thumbnail": "https://hanggames.github.io/images/388.webp",
+    "genre": "Puzzle, Sports"
+  },
+  {
+    "id": "chess-online",
+    "thumbnail": "https://hanggames.github.io/images/389.webp",
+    "genre": "Boardgames"
+  },
+  {
+    "id": "ragdoll-bounce",
+    "thumbnail": "https://hanggames.github.io/images/390.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "lovie-chics-coachella-festival",
+    "thumbnail": "https://hanggames.github.io/images/391.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "last-standing",
+    "thumbnail": "https://hanggames.github.io/images/392.webp",
+    "genre": "Shooter, Battle"
+  },
+  {
+    "id": "the-white-room-4",
+    "thumbnail": "https://hanggames.github.io/images/393.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "truck-stack-colors",
+    "thumbnail": "https://hanggames.github.io/images/394.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "monkey-bubble-defense",
+    "thumbnail": "https://hanggames.github.io/images/395.webp",
+    "genre": "Strategy"
+  },
+  {
+    "id": "cowboys-duel",
+    "thumbnail": "https://hanggames.github.io/images/396.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "color-dots-challenge",
+    "thumbnail": "https://hanggames.github.io/images/397.webp",
+    "genre": "Casual, Strategy"
+  },
+  {
+    "id": "merge-galaxy",
+    "thumbnail": "https://hanggames.github.io/images/398.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "break-a-lucky-egg-brainrots",
+    "thumbnail": "https://hanggames.github.io/images/399.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "color-mix-jelly-merge",
+    "thumbnail": "https://hanggames.github.io/images/400.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "pixel-flow",
+    "thumbnail": "https://hanggames.github.io/images/401.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "fruit-jam",
+    "thumbnail": "https://hanggames.github.io/images/402.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "jello-bubbles",
+    "thumbnail": "https://hanggames.github.io/images/403.webp",
+    "genre": "Bubble Shooter, Match-3"
+  },
+  {
+    "id": "aliens-hunter",
+    "thumbnail": "https://hanggames.github.io/images/404.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "elytra-flight",
+    "thumbnail": "https://hanggames.github.io/images/405.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "puzzle-blocks-asmr-match",
+    "thumbnail": "https://hanggames.github.io/images/406.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "tag-run",
+    "thumbnail": "https://hanggames.github.io/images/407.webp",
+    "genre": "Battle, Casual"
+  },
+  {
+    "id": "bow-and-arrow",
+    "thumbnail": "https://hanggames.github.io/images/408.webp",
+    "genre": "Sports, Casual"
+  },
+  {
+    "id": "stack-fall",
+    "thumbnail": "https://hanggames.github.io/images/409.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "fitness-club-3d",
+    "thumbnail": "https://hanggames.github.io/images/410.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "train-master",
+    "thumbnail": "https://hanggames.github.io/images/411.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "shell-strikers",
+    "thumbnail": "https://hanggames.github.io/images/412.webp",
+    "genre": "Battle"
+  },
+  {
+    "id": "ragdoll-show-throw-break-and-destroy",
+    "thumbnail": "https://hanggames.github.io/images/413.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "mafia-sniper-crime-shooting",
+    "thumbnail": "https://hanggames.github.io/images/414.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "emoji-smasher-smiley-game",
+    "thumbnail": "https://hanggames.github.io/images/415.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "black-hole-beauty-makeup",
+    "thumbnail": "https://hanggames.github.io/images/416.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "crocodilo-tralalero-run",
+    "thumbnail": "https://hanggames.github.io/images/417.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "strawberry-hero",
+    "thumbnail": "https://hanggames.github.io/images/418.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "timewalker-survive",
+    "thumbnail": "https://hanggames.github.io/images/419.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "russian-checkers",
+    "thumbnail": "https://hanggames.github.io/images/420.webp",
+    "genre": "Boardgames"
+  },
+  {
+    "id": "rocket-sky",
+    "thumbnail": "https://hanggames.github.io/images/421.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "chicken-math",
+    "thumbnail": "https://hanggames.github.io/images/422.webp",
+    "genre": "Shooter, Educational"
+  },
+  {
+    "id": "wednesday-light-academia",
+    "thumbnail": "https://hanggames.github.io/images/423.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "bloom-within-a-life-simulator",
+    "thumbnail": "https://hanggames.github.io/images/424.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "plant-merge-zombie-war",
+    "thumbnail": "https://hanggames.github.io/images/425.webp",
+    "genre": "Adventure, Merge"
+  },
+  {
+    "id": "cat-cut",
+    "thumbnail": "https://hanggames.github.io/images/426.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "obby-champions",
+    "thumbnail": "https://hanggames.github.io/images/427.webp",
+    "genre": "Adventure, Battle"
+  },
+  {
+    "id": "hide-and-escape-from-angry-teacher",
+    "thumbnail": "https://hanggames.github.io/images/428.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "asmr-pet-treatment",
+    "thumbnail": "https://hanggames.github.io/images/429.webp",
+    "genre": "Care, Dress-up"
+  },
+  {
+    "id": "color-it-in-3d",
+    "thumbnail": "https://hanggames.github.io/images/430.webp",
+    "genre": "Art, Casual"
+  },
+  {
+    "id": "stickman-vs-zombies-worldcraft",
+    "thumbnail": "https://hanggames.github.io/images/431.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "sorcerer-mahjong-marvels",
+    "thumbnail": "https://hanggames.github.io/images/432.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "hotfoot-baseball",
+    "thumbnail": "https://hanggames.github.io/images/433.webp",
+    "genre": "Sports"
+  },
+  {
+    "id": "bitball",
+    "thumbnail": "https://hanggames.github.io/images/434.webp",
+    "genre": ".IO, Casual"
+  },
+  {
+    "id": "cargo-skates",
+    "thumbnail": "https://hanggames.github.io/images/435.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "robbotto",
+    "thumbnail": "https://hanggames.github.io/images/436.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "bull-runner",
+    "thumbnail": "https://hanggames.github.io/images/437.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "soccer-tournament",
+    "thumbnail": "https://hanggames.github.io/images/438.webp",
+    "genre": "Football"
+  },
+  {
+    "id": "zombie-rush",
+    "thumbnail": "https://hanggames.github.io/images/439.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "headleg-dash-parkour",
+    "thumbnail": "https://hanggames.github.io/images/440.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "obstacle-car-driving",
+    "thumbnail": "https://hanggames.github.io/images/441.webp",
+    "genre": "Adventure, Racing & Driving"
+  },
+  {
+    "id": "snowflight",
+    "thumbnail": "https://hanggames.github.io/images/442.webp",
+    "genre": "Adventure, Simulation"
+  },
+  {
+    "id": "bffs-y2k-fashion",
+    "thumbnail": "https://hanggames.github.io/images/443.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "triangles",
+    "thumbnail": "https://hanggames.github.io/images/444.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "ninjaroof",
+    "thumbnail": "https://hanggames.github.io/images/445.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "fight-for-the-tree",
+    "thumbnail": "https://hanggames.github.io/images/446.webp",
+    "genre": "Battle, Simulation"
+  },
+  {
+    "id": "catch-the-pig",
+    "thumbnail": "https://hanggames.github.io/images/447.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "coin-stack-up",
+    "thumbnail": "https://hanggames.github.io/images/448.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "fishing-life",
+    "thumbnail": "https://hanggames.github.io/images/449.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "table-tennis-open",
+    "thumbnail": "https://hanggames.github.io/images/450.webp",
+    "genre": "Sports, Casual"
+  },
+  {
+    "id": "knife-up-3d",
+    "thumbnail": "https://hanggames.github.io/images/451.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "supermarket-sort-n-match",
+    "thumbnail": "https://hanggames.github.io/images/452.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "dino-egg-shooter",
+    "thumbnail": "https://hanggames.github.io/images/453.webp",
+    "genre": "Puzzle, Bubble Shooter"
+  },
+  {
+    "id": "bus-collect",
+    "thumbnail": "https://hanggames.github.io/images/454.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "obby-survive-parkour",
+    "thumbnail": "https://hanggames.github.io/images/455.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "bubble-shooter-go",
+    "thumbnail": "https://hanggames.github.io/images/456.webp",
+    "genre": "Bubble Shooter"
+  },
+  {
+    "id": "mermaids-spot-the-differences",
+    "thumbnail": "https://hanggames.github.io/images/457.webp",
+    "genre": "Puzzle, Agility"
+  },
+  {
+    "id": "cube-connect",
+    "thumbnail": "https://hanggames.github.io/images/458.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "turret-gunner",
+    "thumbnail": "https://hanggames.github.io/images/459.webp",
+    "genre": "Shooter, Simulation"
+  },
+  {
+    "id": "quackventure",
+    "thumbnail": "https://hanggames.github.io/images/460.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "strike-breakout",
+    "thumbnail": "https://hanggames.github.io/images/461.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "stickman-jailbreak-story",
+    "thumbnail": "https://hanggames.github.io/images/462.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "math-duck",
+    "thumbnail": "https://hanggames.github.io/images/463.webp",
+    "genre": "Cards, Educational"
+  },
+  {
+    "id": "eco-block-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/464.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "mahjong-magic-islands",
+    "thumbnail": "https://hanggames.github.io/images/465.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "color-block-blast-3",
+    "thumbnail": "https://hanggames.github.io/images/466.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "delivery-now",
+    "thumbnail": "https://hanggames.github.io/images/467.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "klondike-solitaire",
+    "thumbnail": "https://hanggames.github.io/images/468.webp",
+    "genre": "Cards, Strategy"
+  },
+  {
+    "id": "cricket-clash-pong",
+    "thumbnail": "https://hanggames.github.io/images/469.webp",
+    "genre": "Sports"
+  },
+  {
+    "id": "artillery-vs-tanks",
+    "thumbnail": "https://hanggames.github.io/images/470.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "jewel-legend-quest",
+    "thumbnail": "https://hanggames.github.io/images/471.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "fidget-trading-card-toy",
+    "thumbnail": "https://hanggames.github.io/images/472.webp",
+    "genre": "Cards"
+  },
+  {
+    "id": "neon-blast",
+    "thumbnail": "https://hanggames.github.io/images/473.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "jetpack-jump",
+    "thumbnail": "https://hanggames.github.io/images/474.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "car-parking-stunt-games-2024",
+    "thumbnail": "https://hanggames.github.io/images/475.webp",
+    "genre": "Racing & Driving, Simulation"
+  },
+  {
+    "id": "bmg-crashday-2025",
+    "thumbnail": "https://hanggames.github.io/images/476.webp",
+    "genre": "Racing & Driving, Simulation"
+  },
+  {
+    "id": "winter-maze",
+    "thumbnail": "https://hanggames.github.io/images/477.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "chain-cube-2048-3d-merge-game",
+    "thumbnail": "https://hanggames.github.io/images/478.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "paint-roller",
+    "thumbnail": "https://hanggames.github.io/images/479.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "sid-ginny-y2k-glam-clash",
+    "thumbnail": "https://hanggames.github.io/images/480.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "sliding-gems",
+    "thumbnail": "https://hanggames.github.io/images/481.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "build-a-queen-2025",
+    "thumbnail": "https://hanggames.github.io/images/482.webp",
+    "genre": "Casual, Dress-up"
+  },
+  {
+    "id": "feed-me-monsters-idle-battle",
+    "thumbnail": "https://hanggames.github.io/images/483.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "sword-and-spin",
+    "thumbnail": "https://hanggames.github.io/images/484.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "bubble-blitz-galaxy",
+    "thumbnail": "https://hanggames.github.io/images/485.webp",
+    "genre": "Bubble Shooter, Match-3"
+  },
+  {
+    "id": "escape-room-mystery-key",
+    "thumbnail": "https://hanggames.github.io/images/486.webp",
+    "genre": "Adventure, Puzzle"
+  },
+  {
+    "id": "mall-anomaly",
+    "thumbnail": "https://hanggames.github.io/images/487.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "mahjong-connect-majong-class",
+    "thumbnail": "https://hanggames.github.io/images/488.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "hidden-object-farm-adventure",
+    "thumbnail": "https://hanggames.github.io/images/489.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "grand-mahjong-connect",
+    "thumbnail": "https://hanggames.github.io/images/490.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "bloom-sort-2-bee-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/491.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "the-last-tiger-tank-simulator",
+    "thumbnail": "https://hanggames.github.io/images/492.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "tricky-life",
+    "thumbnail": "https://hanggames.github.io/images/493.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "golden-frontier",
+    "thumbnail": "https://hanggames.github.io/images/494.webp",
+    "genre": "Adventure, Simulation"
+  },
+  {
+    "id": "stickman-the-flash",
+    "thumbnail": "https://hanggames.github.io/images/495.webp",
+    "genre": "Battle"
+  },
+  {
+    "id": "ropeway-master",
+    "thumbnail": "https://hanggames.github.io/images/496.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "candy-maker-dessert-games",
+    "thumbnail": "https://hanggames.github.io/images/497.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "slime-farm",
+    "thumbnail": "https://hanggames.github.io/images/498.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "strykon",
+    "thumbnail": "https://hanggames.github.io/images/499.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "real-flight-simulator",
+    "thumbnail": "https://hanggames.github.io/images/500.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "car-dealer-idle",
+    "thumbnail": "https://hanggames.github.io/images/501.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "mega-lamba-ramp",
+    "thumbnail": "https://hanggames.github.io/images/502.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "grand-clash-arena",
+    "thumbnail": "https://hanggames.github.io/images/503.webp",
+    "genre": "Battle, Strategy"
+  },
+  {
+    "id": "craftsman-3d-gangster",
+    "thumbnail": "https://hanggames.github.io/images/504.webp",
+    "genre": "Adventure, Shooter"
+  },
+  {
+    "id": "hexagon",
+    "thumbnail": "https://hanggames.github.io/images/505.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "shelf-shift-match",
+    "thumbnail": "https://hanggames.github.io/images/506.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "top-hog",
+    "thumbnail": "https://hanggames.github.io/images/507.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "online-car-destruction-simulator-3d",
+    "thumbnail": "https://hanggames.github.io/images/508.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "cube-drop-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/509.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "griddlers-deluxe",
+    "thumbnail": "https://hanggames.github.io/images/510.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "rooftop-run",
+    "thumbnail": "https://hanggames.github.io/images/511.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "dop-puzzle-erase-master",
+    "thumbnail": "https://hanggames.github.io/images/512.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "bubble-shooter-ultimate",
+    "thumbnail": "https://hanggames.github.io/images/513.webp",
+    "genre": "Bubble Shooter"
+  },
+  {
+    "id": "obby-escape-prison-rat-dance",
+    "thumbnail": "https://hanggames.github.io/images/514.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "puzzle-games-outing-day",
+    "thumbnail": "https://hanggames.github.io/images/515.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "fortress-of-the-sinister",
+    "thumbnail": "https://hanggames.github.io/images/516.webp",
+    "genre": "Battle, Strategy"
+  },
+  {
+    "id": "pin-master",
+    "thumbnail": "https://hanggames.github.io/images/517.webp",
+    "genre": "Adventure, Puzzle"
+  },
+  {
+    "id": "sunny-link",
+    "thumbnail": "https://hanggames.github.io/images/518.webp",
+    "genre": "Mahjong & Connect"
+  },
+  {
+    "id": "strawberry-shortcake",
+    "thumbnail": "https://hanggames.github.io/images/519.webp",
+    "genre": "Cooking, Simulation"
+  },
+  {
+    "id": "two-rx7-drifters",
+    "thumbnail": "https://hanggames.github.io/images/520.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "crown-cannon",
+    "thumbnail": "https://hanggames.github.io/images/521.webp",
+    "genre": "Strategy"
+  },
+  {
+    "id": "fashion-battle-for-survival",
+    "thumbnail": "https://hanggames.github.io/images/522.webp",
+    "genre": "Puzzle, Dress-up"
+  },
+  {
+    "id": "run-n-shoot",
+    "thumbnail": "https://hanggames.github.io/images/523.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "stickman-in-space",
+    "thumbnail": "https://hanggames.github.io/images/524.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "meatrider",
+    "thumbnail": "https://hanggames.github.io/images/525.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "emilys-hotel-solitaire",
+    "thumbnail": "https://hanggames.github.io/images/526.webp",
+    "genre": "Cards"
+  },
+  {
+    "id": "emoji-frenzy",
+    "thumbnail": "https://hanggames.github.io/images/527.webp",
+    "genre": "Puzzle, Agility"
+  },
+  {
+    "id": "fix-da-brainrot",
+    "thumbnail": "https://hanggames.github.io/images/528.webp",
+    "genre": "Jigsaw"
+  },
+  {
+    "id": "neighborhood-defense",
+    "thumbnail": "https://hanggames.github.io/images/529.webp",
+    "genre": "Strategy"
+  },
+  {
+    "id": "asmr-beauty-superstar",
+    "thumbnail": "https://hanggames.github.io/images/530.webp",
+    "genre": "Dress-up, Simulation"
+  },
+  {
+    "id": "line-on-hole",
+    "thumbnail": "https://hanggames.github.io/images/531.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "sudo-tetroid-daily",
+    "thumbnail": "https://hanggames.github.io/images/532.webp",
+    "genre": "Puzzle, Educational"
+  },
+  {
+    "id": "twilight-solitaire-tripeaks",
+    "thumbnail": "https://hanggames.github.io/images/533.webp",
+    "genre": "Cards"
+  },
+  {
+    "id": "mustang-city-driver",
+    "thumbnail": "https://hanggames.github.io/images/534.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "contract-deer-hunter",
+    "thumbnail": "https://hanggames.github.io/images/535.webp",
+    "genre": "Shooter, Simulation"
+  },
+  {
+    "id": "deep-in-the-lab-chapter-1",
+    "thumbnail": "https://hanggames.github.io/images/536.webp",
+    "genre": "Adventure, Shooter"
+  },
+  {
+    "id": "tower-defense",
+    "thumbnail": "https://hanggames.github.io/images/537.webp",
+    "genre": "Adventure, Battle"
+  },
+  {
+    "id": "2048-cube-shooting-merge",
+    "thumbnail": "https://hanggames.github.io/images/538.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "find-it-fast",
+    "thumbnail": "https://hanggames.github.io/images/539.webp",
+    "genre": "Puzzle, Quiz"
+  },
+  {
+    "id": "flower-sort",
+    "thumbnail": "https://hanggames.github.io/images/540.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "knit-bears",
+    "thumbnail": "https://hanggames.github.io/images/541.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "2020-connect",
+    "thumbnail": "https://hanggames.github.io/images/542.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "build-a-rich-queen",
+    "thumbnail": "https://hanggames.github.io/images/543.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "ghostly-graveyard-halloween-special",
+    "thumbnail": "https://hanggames.github.io/images/544.webp",
+    "genre": "Adventure, Puzzle"
+  },
+  {
+    "id": "ellie-and-friends-venice-carnival",
+    "thumbnail": "https://hanggames.github.io/images/545.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "tapko",
+    "thumbnail": "https://hanggames.github.io/images/546.webp",
+    "genre": "Sports, Casual"
+  },
+  {
+    "id": "penguin-adventure",
+    "thumbnail": "https://hanggames.github.io/images/547.webp",
+    "genre": "Adventure, Agility"
+  },
+  {
+    "id": "obby-halloween-danger-skate",
+    "thumbnail": "https://hanggames.github.io/images/548.webp",
+    "genre": "Casual, Strategy"
+  },
+  {
+    "id": "royal-bubble-blast",
+    "thumbnail": "https://hanggames.github.io/images/549.webp",
+    "genre": "Bubble Shooter"
+  },
+  {
+    "id": "choo-choo-spider-monster-train",
+    "thumbnail": "https://hanggames.github.io/images/550.webp",
+    "genre": "Shooter, Simulation"
+  },
+  {
+    "id": "one-line",
+    "thumbnail": "https://hanggames.github.io/images/551.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "homo-evolution",
+    "thumbnail": "https://hanggames.github.io/images/552.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "ball-jump-switch-the-colors",
+    "thumbnail": "https://hanggames.github.io/images/553.webp",
+    "genre": "Puzzle, Agility"
+  },
+  {
+    "id": "kaboom-miner",
+    "thumbnail": "https://hanggames.github.io/images/554.webp",
+    "genre": "Casual, Strategy"
+  },
+  {
+    "id": "ball-rolling-slope",
+    "thumbnail": "https://hanggames.github.io/images/555.webp",
+    "genre": "Agility, Casual"
+  },
+  {
+    "id": "idle-firefighter-3d",
+    "thumbnail": "https://hanggames.github.io/images/556.webp",
+    "genre": "Simulation"
+  },
+  {
+    "id": "stick-boy-bazooka-ragdoll",
+    "thumbnail": "https://hanggames.github.io/images/557.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "screw-puzzle-master",
+    "thumbnail": "https://hanggames.github.io/images/558.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "my-dreamy-flora-fashion-look",
+    "thumbnail": "https://hanggames.github.io/images/559.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "snake-masters",
+    "thumbnail": "https://hanggames.github.io/images/560.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "smash-the-car-to-pieces",
+    "thumbnail": "https://hanggames.github.io/images/561.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "wool-sorting",
+    "thumbnail": "https://hanggames.github.io/images/562.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "marble-blast",
+    "thumbnail": "https://hanggames.github.io/images/563.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "daily-chess-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/564.webp",
+    "genre": "Boardgames"
+  },
+  {
+    "id": "color-nuts",
+    "thumbnail": "https://hanggames.github.io/images/565.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "unscrew-wood-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/566.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "dead-zone-mech-ops",
+    "thumbnail": "https://hanggames.github.io/images/567.webp",
+    "genre": "Shooter, Simulation"
+  },
+  {
+    "id": "challenger-city-driver",
+    "thumbnail": "https://hanggames.github.io/images/568.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "puppy-merge",
+    "thumbnail": "https://hanggames.github.io/images/569.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "caterfall-2048",
+    "thumbnail": "https://hanggames.github.io/images/570.webp",
+    "genre": "Merge"
+  },
+  {
+    "id": "merge-gun-fps-shooting-zombie",
+    "thumbnail": "https://hanggames.github.io/images/571.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "combine-pickaxes",
+    "thumbnail": "https://hanggames.github.io/images/572.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "backgammon-deluxe-edition",
+    "thumbnail": "https://hanggames.github.io/images/573.webp",
+    "genre": "Boardgames"
+  },
+  {
+    "id": "gunfu-stickman-2",
+    "thumbnail": "https://hanggames.github.io/images/574.webp",
+    "genre": "Shooter"
+  },
+  {
+    "id": "shot-can-wild",
+    "thumbnail": "https://hanggames.github.io/images/575.webp",
+    "genre": "Shooter, Casual"
+  },
+  {
+    "id": "snow-rider-obby-parkour",
+    "thumbnail": "https://hanggames.github.io/images/576.webp",
+    "genre": "Adventure, Racing & Driving"
+  },
+  {
+    "id": "christmas-blind-box",
+    "thumbnail": "https://hanggames.github.io/images/577.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "ellie-and-ben-christmas-eve",
+    "thumbnail": "https://hanggames.github.io/images/578.webp",
+    "genre": "Dress-up"
+  },
+  {
+    "id": "candy-match-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/579.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "g-wagon-city-driver",
+    "thumbnail": "https://hanggames.github.io/images/580.webp",
+    "genre": "Racing & Driving"
+  },
+  {
+    "id": "dta-best-thief",
+    "thumbnail": "https://hanggames.github.io/images/581.webp",
+    "genre": "Adventure, Simulation"
+  },
+  {
+    "id": "tile-fruits",
+    "thumbnail": "https://hanggames.github.io/images/582.webp",
+    "genre": "Match-3"
+  },
+  {
+    "id": "knee-case-simulator",
+    "thumbnail": "https://hanggames.github.io/images/583.webp",
+    "genre": "Dress-up, Simulation"
+  },
+  {
+    "id": "light-line",
+    "thumbnail": "https://hanggames.github.io/images/584.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "knots",
+    "thumbnail": "https://hanggames.github.io/images/585.webp",
+    "genre": "Puzzle"
+  },
+  {
+    "id": "traffic-tap-puzzle",
+    "thumbnail": "https://hanggames.github.io/images/586.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "demolition-derby-derby",
+    "thumbnail": "https://hanggames.github.io/images/587.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "monster-dash",
+    "thumbnail": "https://hanggames.github.io/images/588.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "halloween-stickman",
+    "thumbnail": "https://hanggames.github.io/images/589.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "italian-brainrot-jigsaw",
+    "thumbnail": "https://hanggames.github.io/images/590.webp",
+    "genre": "Jigsaw"
+  },
+  {
+    "id": "3d-maze-control",
+    "thumbnail": "https://hanggames.github.io/images/591.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "horror-escape-granny-room",
+    "thumbnail": "https://hanggames.github.io/images/592.webp",
+    "genre": "Adventure"
+  },
+  {
+    "id": "solitaire-story-tripeaks-6",
+    "thumbnail": "https://hanggames.github.io/images/593.webp",
+    "genre": "Cards"
+  },
+  {
+    "id": "anime-couple-avatar-maker",
+    "thumbnail": "https://hanggames.github.io/images/594.webp",
+    "genre": "Casual, Dress-up"
+  },
+  {
+    "id": "cinema-business-idle-games",
+    "thumbnail": "https://hanggames.github.io/images/595.webp",
+    "genre": "Casual, Simulation"
+  },
+  {
+    "id": "uphill-rush-13",
+    "thumbnail": "https://hanggames.github.io/images/596.webp",
+    "genre": "Casual"
+  },
+  {
+    "id": "21-cards",
+    "thumbnail": "https://hanggames.github.io/images/597.webp",
+    "genre": "Cards"
+  },
+  {
+    "id": "bingo-halloween",
+    "thumbnail": "https://hanggames.github.io/images/598.webp",
+    "genre": "Puzzle, Casual"
+  },
+  {
+    "id": "sort-game-toy-sort",
+    "thumbnail": "https://hanggames.github.io/images/599.webp",
+    "genre": "Casual"
+  }
+]
