@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamevi Test Portal | Play Free HTML5 Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-card: rgba(22, 28, 45, 0.7);
+      --accent: #6c5ce7;
+      --accent-glow: rgba(108, 92, 231, 0.4);
+      --text-white: #ffffff;
+      --text-gray: #a0aec0;
+      --neon-green: #00f2fe;
+      --neon-pink: #ff007f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(circle at top, #1a1b36 0%, var(--bg-dark) 70%);
+      color: var(--text-white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--neon-green), var(--neon-pink));
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #ffffff 30%, var(--text-gray) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-gray);
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+      flex-grow: 1;
+      width: 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 16px;
+      box-shadow: 0 0 40px var(--accent-glow);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .thumbnail-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      overflow: hidden;
+      background: #000;
+    }
+
+    .thumbnail-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .card:hover .thumbnail-wrapper img {
+      transform: scale(1.08);
+    }
+
+    .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+    }
+
+    .badge-crazygames {
+      background: rgba(255, 0, 127, 0.2);
+      color: #ff60b5;
+      border: 1px solid rgba(255, 0, 127, 0.4);
+    }
+
+    .badge-gamedistribution {
+      background: rgba(0, 242, 254, 0.2);
+      color: #60efff;
+      border: 1px solid rgba(0, 242, 254, 0.4);
+    }
+
+    .card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-white);
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    .play-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: var(--accent);
+      color: var(--text-white);
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(108, 92, 231, 0.2);
+    }
+
+    .play-btn:hover {
+      background: #7d6ef9;
+      box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+    }
+
+    .play-btn:active {
+      transform: scale(0.98);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-gray);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gamevi Test Portal</h1>
+    <p class="subtitle">A modular list of HTML5 test games deployed on GitHub Pages with Same-Origin Spoofing mechanisms.</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+
+      <!-- Card: Drift Hunters -->
+      <article class="card">
+        <span class="badge badge-crazygames">CrazyGames Scraped</span>
+        <div class="thumbnail-wrapper">
+          <img src="images/214.webp" alt="Drift Hunters Cover">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Drift Hunters</h2>
+          <p class="card-description">Experience the art of drifting with customizable tuned-up rides and dynamic tracks in 10 unique locations.</p>
+          <div class="tag-container">
+            <span class="tag">Car</span>
+            <span class="tag">Drifting</span>
+            <span class="tag">3D</span>
+            <span class="tag">Driving</span>
+          </div>
+          <a href="drift-hunters.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Stickman Adventure -->
+      <article class="card">
+        <span class="badge badge-gamedistribution">GameDistribution API</span>
+        <div class="thumbnail-wrapper">
+          <img src="images/219.webp" alt="Stickman Adventure Cover">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Stickman Adventure</h2>
+          <p class="card-description">Time and space travel adventure where you'll encounter traps, monsters, and rescue your stickman friends.</p>
+          <div class="tag-container">
+            <span class="tag">Adventure</span>
+            <span class="tag">Stickman</span>
+            <span class="tag">HTML5</span>
+          </div>
+          <a href="stickman.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Bubble Shooter Vintage -->
+      <article class="card">
+        <span class="badge badge-gamedistribution">GameDistribution API</span>
+        <div class="thumbnail-wrapper">
+          <img src="images/220.webp" alt="Bubble Shooter Vintage Cover">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Bubble Shooter Vintage</h2>
+          <p class="card-description">A vintage classic match-three bubble pop game. Control the canon, aim, shoot, and pop bubbles to score high.</p>
+          <div class="tag-container">
+            <span class="tag">Bubble Shooter</span>
+            <span class="tag">Match 3</span>
+            <span class="tag">Classic</span>
+          </div>
+          <a href="bubble-shooter.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Ragdoll Archers -->
+      <article class="card">
+        <span class="badge badge-crazygames">CrazyGames Scraped</span>
+        <div class="thumbnail-wrapper">
+          <img src="images/217.webp" alt="Ragdoll Archers Cover">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Ragdoll Archers</h2>
+          <p class="card-description">Fire arrows at opponents using bow and arrow-equipped stickmen with realistic, bouncy ragdoll physics.</p>
+          <div class="tag-container">
+            <span class="tag">Archery</span>
+            <span class="tag">Ragdoll</span>
+            <span class="tag">Physics</span>
+            <span class="tag">Stickman</span>
+          </div>
+          <a href="ragdoll-archers.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card: Moto X3M -->
+      <article class="card">
+        <span class="badge badge-crazygames">CrazyGames Scraped</span>
+        <div class="thumbnail-wrapper">
+          <img src="images/218.webp" alt="Moto X3M Cover">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Moto X3M</h2>
+          <p class="card-description">High-speed motorcycle racing thrills combined with challenging stunt designs and action-packed trials.</p>
+          <div class="tag-container">
+            <span class="tag">Bike</span>
+            <span class="tag">Stunt</span>
+            <span class="tag">Racing</span>
+            <span class="tag">Classic</span>
+          </div>
+          <a href="moto-x3m.html" class="play-btn">Play Now &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Gamevi. Deployed for isolated staging on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
