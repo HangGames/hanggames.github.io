@@ -1,4 +1,4 @@
-name: Hourly Selective Footer Tag Injection
+name: Hourly Randomized Footer Tag Injection
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:      # Provides a manual "Run workflow" button in GitHub
 
 jobs:
-  inject-custom-tag:
+  inject-random-custom-tag:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,11 +23,19 @@ jobs:
           echo "$REMOTE_DATA" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Build New HTML Links Snippet
+      - name: Shuffle and Build 3 Random HTML Links
         run: |
           > temp_anchors.txt
+          
+          # 1. Filter out empty lines first
+          CLEAN_LINES=$(echo "${{ steps.fetch_data.outputs.data }}" | grep -v '^ *$')
+          
+          # 2. shuf -n 3 randomly picks exactly 3 unique lines from the list
+          RANDOM_THREE=$(echo "$CLEAN_LINES" | shuf -n 3)
+          
+          # 3. Process the chosen 3 lines into anchors
           while IFS= read -r line; do
-            if [ ! -z "$line" ] && [ ! -z "${line//[[:space:]]/}" ]; then
+            if [ ! -z "$line" ]; then
               clean_line=$(echo "$line" | tr -d '\r')
               
               if [[ "$clean_line" == *"|"* ]]; then
@@ -40,7 +48,7 @@ jobs:
               
               echo "  <a href=\"$url\">$text</a>" >> temp_anchors.txt
             fi
-          done <<< "${{ steps.fetch_data.outputs.data }}"
+          done <<< "$RANDOM_THREE"
 
       - name: Process Custom Tag Replacement
         shell: python
@@ -48,19 +56,16 @@ jobs:
           import os
           import re
 
-          # 1. Read the newly generated link anchor lines
+          # Read the 3 newly generated random anchors
           with open("temp_anchors.txt", "r", encoding="utf-8") as f:
               new_links = f.read().strip()
 
-          # Define our custom element wrappers
           open_tag = "<custom-links>"
           close_tag = "</custom-links>"
           fresh_payload = f"{open_tag}\n{new_links}\n{close_tag}"
 
-          # Regex to find an existing <custom-links> element and everything inside it
           custom_tag_pattern = re.compile(r"<custom-links>.*?</custom-links>", re.DOTALL)
 
-          # 2. Walk through every folder to find your HTML files
           for root, dirs, files in os.walk("."):
               for file in files:
                   if file.endswith(".html") and file != "temp_anchors.txt":
@@ -69,23 +74,22 @@ jobs:
                       with open(file_path, "r", encoding="utf-8") as f:
                           file_content = f.read()
                       
-                      # STATE A: The custom element already exists (Run 2 onwards)
+                      # Run 2 onwards: Update existing tags
                       if open_tag in file_content and close_tag in file_content:
                           updated_html = custom_tag_pattern.sub(fresh_payload, file_content)
                       
-                      # STATE B: First time run - Inject right before </footer>
+                      # First time run: Inject right before </footer>
                       elif "</footer>" in file_content:
                           first_run_injection = f"{fresh_payload}</footer>"
-                          # We replace only the final occurrence or a clean string swap
                           updated_html = file_content.replace("</footer>", first_run_injection)
                       
                       else:
-                          continue # Skip file if it doesn't contain a footer
+                          continue
                       
                       with open(file_path, "w", encoding="utf-8") as f:
                           f.write(updated_html)
                           
-          print("Targeted custom tag updates completed across all pages.")
+          print("Randomized custom tag updates completed across all pages.")
 
       - name: Clean Up Temp File
         run: rm temp_anchors.txt
@@ -97,8 +101,8 @@ jobs:
           
           git add .
           if git diff --staged --quiet; then
-            echo "The text file contents match current state. Skipping push."
+            echo "The randomly selected links matched last hour exactly. Skipping push."
           else
-            git commit -m "chore: hourly dynamic custom-links injection"
+            git commit -m "chore: hourly randomized custom-links update"
             git push
           fi
