@@ -1,0 +1,98 @@
+name: Hourly Target Footer Replace
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Triggers automatically at the start of every hour
+  workflow_dispatch:      # Provides a manual "Run workflow" button in GitHub
+
+jobs:
+  replace-footer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Remote Links
+        id: fetch_data
+        run: |
+          # Fetching your specific data template from GitHub Gist
+          REMOTE_DATA=$(curl -s "https://gist.githubusercontent.com/raw/04f6645a22d39e92114a9270920e3f4b/gist.txt")
+          
+          # Pass data safely to subsequent steps, ensuring multi-line preservation
+          echo "data<<EOF" >> $GITHUB_OUTPUT
+          echo "$REMOTE_DATA" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Build New Footer Content
+        run: |
+          echo "<footer>" > new_footer.html
+          
+          while IFS= read -r line; do
+            # Filter out empty or whitespace-only lines
+            if [ ! -z "$line" ] && [ ! -z "${line//[[:space:]]/}" ]; then
+              # Scrub hidden Windows carriage return (\r) characters
+              clean_line=$(echo "$line" | tr -d '\r')
+              
+              # Split the line by the pipe character (|)
+              if [[ "$clean_line" == *"|"* ]]; then
+                url=$(echo "$clean_line" | cut -d'|' -f1 | xargs)
+                text=$(echo "$clean_line" | cut -d'|' -f2 | xargs)
+              else
+                # Fallback: If no anchor text pipe exists, use the URL as text
+                url=$(echo "$clean_line" | xargs)
+                text="$url"
+              fi
+              
+              echo "  <a href=\"$url\">$text</a>" >> new_footer.html
+            fi
+          done <<< "${{ steps.fetch_data.outputs.data }}"
+          
+          echo "</footer>" >> new_footer.html
+
+      - name: Global Footer Tag Replacement
+        shell: python
+        run: |
+          import os
+          import re
+
+          # 1. Read the parsed footer block generated in the previous step
+          with open("new_footer.html", "r", encoding="utf-8") as f:
+              new_footer_content = f.read().strip()
+
+          # 2. Compile Regex pattern targeting <footer>, everything inside, and </footer>
+          # re.DOTALL makes sure it can clean up across multiple lines seamlessly
+          footer_pattern = re.compile(r"<footer>.*?</footer>", re.DOTALL)
+
+          # 3. Walk through your codebase and execute replacements
+          for root, dirs, files in os.walk("."):
+              for file in files:
+                  if file.endswith(".html") and file != "new_footer.html":
+                      file_path = os.path.join(root, file)
+                      
+                      with open(file_path, "r", encoding="utf-8") as f:
+                          file_content = f.read()
+                      
+                      if footer_pattern.search(file_content):
+                          updated_content = footer_pattern.sub(new_footer_content, file_content)
+                          
+                          with open(file_path, "w", encoding="utf-8") as f:
+                              f.write(updated_content)
+          print("Global search and replace executed across all HTML targets.")
+
+      - name: Clean Up Temp File
+        run: rm new_footer.html
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add .
+          # This protects your repository history from getting empty spam commits
+          if git diff --staged --quiet; then
+            echo "The text file contents have not changed. Skipping commit."
+          else
+            git commit -m "chore: automated hourly footer anchor sync"
+            git push
+          fi
