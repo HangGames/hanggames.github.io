@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.AUTO_FOOTER_TOKEN }}
 
       - name: Fetch Remote Links
         id: fetch_data
