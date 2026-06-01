@@ -1,4 +1,4 @@
-name: Hourly Target Footer Replace
+name: Hourly Selective Footer Tag Injection
 
 on:
   schedule:
@@ -6,84 +6,89 @@ on:
   workflow_dispatch:      # Provides a manual "Run workflow" button in GitHub
 
 jobs:
-  replace-footer:
+  inject-custom-tag:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.AUTO_FOOTER_TOKEN }}
+          token: ${{ secrets.AUTO_FOOTER_TOKEN }} # Bypasses organization restrictions
 
       - name: Fetch Remote Links
         id: fetch_data
         run: |
-          # Fetching your specific data template from GitHub Gist
           REMOTE_DATA=$(curl -s "https://gist.githubusercontent.com/raw/04f6645a22d39e92114a9270920e3f4b/gist.txt")
-          
-          # Pass data safely to subsequent steps, ensuring multi-line preservation
           echo "data<<EOF" >> $GITHUB_OUTPUT
           echo "$REMOTE_DATA" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Build New Footer Content
+      - name: Build New HTML Links Snippet
         run: |
-          echo "<footer>" > new_footer.html
-          
+          > temp_anchors.txt
           while IFS= read -r line; do
-            # Filter out empty or whitespace-only lines
             if [ ! -z "$line" ] && [ ! -z "${line//[[:space:]]/}" ]; then
-              # Scrub hidden Windows carriage return (\r) characters
               clean_line=$(echo "$line" | tr -d '\r')
               
-              # Split the line by the pipe character (|)
               if [[ "$clean_line" == *"|"* ]]; then
                 url=$(echo "$clean_line" | cut -d'|' -f1 | xargs)
                 text=$(echo "$clean_line" | cut -d'|' -f2 | xargs)
               else
-                # Fallback: If no anchor text pipe exists, use the URL as text
                 url=$(echo "$clean_line" | xargs)
                 text="$url"
               fi
               
-              echo "  <a href=\"$url\">$text</a>" >> new_footer.html
+              echo "  <a href=\"$url\">$text</a>" >> temp_anchors.txt
             fi
           done <<< "${{ steps.fetch_data.outputs.data }}"
-          
-          echo "</footer>" >> new_footer.html
 
-      - name: Global Footer Tag Replacement
+      - name: Process Custom Tag Replacement
         shell: python
         run: |
           import os
           import re
 
-          # 1. Read the parsed footer block generated in the previous step
-          with open("new_footer.html", "r", encoding="utf-8") as f:
-              new_footer_content = f.read().strip()
+          # 1. Read the newly generated link anchor lines
+          with open("temp_anchors.txt", "r", encoding="utf-8") as f:
+              new_links = f.read().strip()
 
-          # 2. Compile Regex pattern targeting <footer>, everything inside, and </footer>
-          # re.DOTALL makes sure it can clean up across multiple lines seamlessly
-          footer_pattern = re.compile(r"<footer>.*?</footer>", re.DOTALL)
+          # Define our custom element wrappers
+          open_tag = "<custom-links>"
+          close_tag = "</custom-links>"
+          fresh_payload = f"{open_tag}\n{new_links}\n{close_tag}"
 
-          # 3. Walk through your codebase and execute replacements
+          # Regex to find an existing <custom-links> element and everything inside it
+          custom_tag_pattern = re.compile(r"<custom-links>.*?</custom-links>", re.DOTALL)
+
+          # 2. Walk through every folder to find your HTML files
           for root, dirs, files in os.walk("."):
               for file in files:
-                  if file.endswith(".html") and file != "new_footer.html":
+                  if file.endswith(".html") and file != "temp_anchors.txt":
                       file_path = os.path.join(root, file)
                       
                       with open(file_path, "r", encoding="utf-8") as f:
                           file_content = f.read()
                       
-                      if footer_pattern.search(file_content):
-                          updated_content = footer_pattern.sub(new_footer_content, file_content)
+                      # STATE A: The custom element already exists (Run 2 onwards)
+                      if open_tag in file_content and close_tag in file_content:
+                          updated_html = custom_tag_pattern.sub(fresh_payload, file_content)
+                      
+                      # STATE B: First time run - Inject right before </footer>
+                      elif "</footer>" in file_content:
+                          first_run_injection = f"{fresh_payload}</footer>"
+                          # We replace only the final occurrence or a clean string swap
+                          updated_html = file_content.replace("</footer>", first_run_injection)
+                      
+                      else:
+                          continue # Skip file if it doesn't contain a footer
+                      
+                      with open(file_path, "w", encoding="utf-8") as f:
+                          f.write(updated_html)
                           
-                          with open(file_path, "w", encoding="utf-8") as f:
-                              f.write(updated_content)
-          print("Global search and replace executed across all HTML targets.")
+          print("Targeted custom tag updates completed across all pages.")
 
       - name: Clean Up Temp File
-        run: rm new_footer.html
+        run: rm temp_anchors.txt
 
       - name: Commit and Push Changes
         run: |
@@ -91,10 +96,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           git add .
-          # This protects your repository history from getting empty spam commits
           if git diff --staged --quiet; then
-            echo "The text file contents have not changed. Skipping commit."
+            echo "The text file contents match current state. Skipping push."
           else
-            git commit -m "chore: automated hourly footer anchor sync"
+            git commit -m "chore: hourly dynamic custom-links injection"
             git push
           fi
