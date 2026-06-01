@@ -103,6 +103,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "The randomly selected links matched last hour exactly. Skipping push."
           else
-            git commit -m "chore: hourly randomized custom-links update"
+            git commit -m "update"
             git push
           fi
